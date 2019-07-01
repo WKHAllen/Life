@@ -19,7 +19,7 @@ void Display::fill(int r, int g, int b) {
 }
 
 void Display::draw(int x, int y, int r, int g, int b) {
-    sf::RectangleShape cell(sf::Vector2f(8, 8));
+    sf::RectangleShape cell(sf::Vector2f(cellSize, cellSize));
     cell.setPosition(sf::Vector2f(cellSize * x, cellSize * y));
     window.draw(cell);
 }
